@@ -17,4 +17,10 @@ public class FunController {
     {
         return ResponseEntity.status(HttpStatus.OK).body("hi there!");
     }
+
+    @GetMapping("/fun1")
+    public ResponseEntity<String>fun1()
+    {
+        return ResponseEntity.status(HttpStatus.OK).body("fun1 method is working!!");
+    }
 }
