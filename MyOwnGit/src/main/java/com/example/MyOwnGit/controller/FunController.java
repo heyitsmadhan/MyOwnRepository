@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/home")
 public class FunController {
 
-    @GetMapping("/fun")
+    @GetMapping("/greet")
     public ResponseEntity<String>fun()
     {
         return ResponseEntity.status(HttpStatus.OK).body("hi there!");
